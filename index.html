@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 
 
+
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
 
 <!---         !-->
@@ -69,6 +70,7 @@ function initialize() {
     new google.maps.LatLng(46.5215, 6.6080));
   map.fitBounds(defaultBounds);
 
+
   // Create the search box and link it to the UI element.
   var input = /** @type {HTMLInputElement} */(
     document.getElementById('pac-input'));
@@ -103,6 +105,7 @@ function initialize() {
       };
 
       // Create a marker for each place.
+      var image = 'cat-icon.png';
       var marker = new google.maps.Marker({
         map: map,
         icon: 'cat-icon-2.png',
@@ -141,4 +144,3 @@ google.maps.event.addDomListener(window, 'load', initialize);
     
   </body>
 </html>
-
