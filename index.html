@@ -31,15 +31,15 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 }
 
-function rotate90() {
+function rotate45() {
   var heading = map.getHeading() || 0;
-  map.setHeading(heading + 90);
+  map.setHeading(heading + 45);
 }
 
 function autoRotate() {
   // Determine if we're showing aerial imagery
   if (map.getTilt() != 0) {
-    window.setInterval(rotate90, 3000);
+    window.setInterval(rotate45, 3000);
   }
 }
 
