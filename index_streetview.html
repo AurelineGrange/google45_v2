@@ -20,6 +20,7 @@
 <script>
 var map;
 var panorama;
+var plan;
 
 function initialize() {
   var start_location = new google.maps.LatLng(36.964645, -122.01523);
@@ -36,17 +37,32 @@ function initialize() {
     document.getElementById('map-canvas'), 
     mapOptions
     );
-    
-  var fenway = {lat: 42.345573, lng: -71.098326};
+  
+  var planOptions = {
+    center: start_location,
+    zoom: 18,
+    mapTypeId: google.maps.MapTypeId.ROAPMAP,
+    heading: 90,
+    tilt: 45, 
+    streetViewControl: true
+  };
+  
+  plan = new google.maps.Map(
+    document.getElementById('sv-canvas'), 
+    planOptions
+    );
+  
+  /* 
   panorama = new google.maps.StreetViewPanorama(
     document.getElementById('sv-canvas'), {
-      position: fenway,
+      center: start_location,
       pov: {
         heading: 34,
         pitch: 10
       }
     });
     map.setStreetView(panorama);
+    */
 }
 
 function rotate90() {
