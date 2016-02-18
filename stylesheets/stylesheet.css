@@ -261,7 +261,7 @@ html, body {
 	height: 20%;
 	margin: 0px;
 	padding: 0px;
-	bottom: 0px;
+	bottom: 0;
 }
 .controls {
 	margin-top: 16px;
