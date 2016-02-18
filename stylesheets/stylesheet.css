@@ -251,18 +251,11 @@ html, body {
 	padding: 0px
 }
 #map-main {
-	height: 80%;
+	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	position: absolute;
-	bottom: 0
 }
-#map-sub {
-	height: 20%;
-	margin: 0px;
-	padding: 0px;
-	bottom: 0
-}
+
 .controls {
 	margin-top: 16px;
 	border: 1px solid transparent;
