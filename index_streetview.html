@@ -21,14 +21,20 @@
 var map;
 
 function initialize() {
+  var start_location = new google.maps.LatLng(36.964645, -122.01523);
   var mapOptions = {
-    center: new google.maps.LatLng(36.964645, -122.01523),
+    center: start_location,
     zoom: 18,
-    mapTypeId: google.maps.MapTypeId.SATELLITE
+    mapTypeId: google.maps.MapTypeId.SATELLITE,
     heading: 90,
-    tilt: 45
+    tilt: 45, 
+    streetViewControl: true
   };
-  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  
+  map = new google.maps.Map(
+    document.getElementById('map-canvas'), 
+    mapOptions
+    );
 }
 
 function rotate90() {
