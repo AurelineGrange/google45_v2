@@ -254,7 +254,7 @@ html, body {
 	height: 80%;
 	margin: 0px;
 	padding: 0px;
-	position: fixed;
+	position: absolute;
 	bottom: 0px
 }
 #map-sub {
