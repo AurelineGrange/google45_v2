@@ -262,12 +262,12 @@ html, body {
 }
 
 #map-canvas{
-	height: 60%;
+	height: 70%;
 	top: 0;
 }
 
 #sv-canvas{
-	height: 40%;
+	height: 30%;
 	bottom: 0;
 }
 
