@@ -252,19 +252,22 @@ html, body {
 }
 
 /* STREET VIEW & MAP */
-#map-canvas{
-	height: 80%;
+#map-canvas, #sv-canvas{
 	margin: 0px;
 	padding: 0px;
-	position: absolute;
+	position: fixed;
+    	left: 0;
+    	right: 0;
 	top: 0;
 }
 
 #map-canvas{
+	height: 80%;
+	top: 0;
+}
+
+#sv-canvas{
 	height: 20%;
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
 	bottom: 0;
 }
 
