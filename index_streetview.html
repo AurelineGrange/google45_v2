@@ -19,6 +19,7 @@
 
 <script>
 var map;
+var panorama;
 
 function initialize() {
   var start_location = new google.maps.LatLng(36.964645, -122.01523);
@@ -35,6 +36,16 @@ function initialize() {
     document.getElementById('map-canvas'), 
     mapOptions
     );
+    
+  panorama = new google.maps.StreetViewPanorama(
+    document.getElementById('sv-canvas'), {
+      position: 
+      pov: {
+        heading: 34,
+        pitch: 10
+      }
+    });
+    map.setStreetView(sv-canvas);
 }
 
 function rotate90() {
