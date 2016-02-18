@@ -38,8 +38,9 @@ function initialize() {
     );
     
   panorama = new google.maps.StreetViewPanorama(
+    var fenway = {lat: 42.345573, lng: -71.098326};
     document.getElementById('sv-canvas'), {
-      center: start_location,
+      position: fenway,
       pov: {
         heading: 34,
         pitch: 10
