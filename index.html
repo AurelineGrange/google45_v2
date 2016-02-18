@@ -30,6 +30,14 @@ function initialize() {
   };
   map = new google.maps.Map(document.getElementById('map-main'), mapOptions);
 }
+var panorama = new google.maps.StreetViewPanorama(
+      document.getElementById('map-sub'), {
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      });
+  map.setStreetView(panorama);
 
 function rotate90() {
   var heading = map.getHeading() || 0;
