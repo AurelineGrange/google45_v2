@@ -28,16 +28,8 @@ function initialize() {
     heading: 90,
     tilt: 45
   };
-  map = new google.maps.Map(document.getElementById('map-main'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 }
-var panorama = new google.maps.StreetViewPanorama(
-      document.getElementById('map-sub'), {
-        pov: {
-          heading: 34,
-          pitch: 10
-        }
-      });
-  map.setStreetView(panorama);
 
 function rotate90() {
   var heading = map.getHeading() || 0;
@@ -139,8 +131,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <body>
 
     <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    <div id="map-main"></div>
-    <div id="map-sub"></div>
+    <div id="map-canvas"></div>
     
   </body>
   
