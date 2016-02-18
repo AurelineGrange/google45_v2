@@ -253,7 +253,8 @@ html, body {
 #map-main {
 	height: 80%;
 	margin: 0px;
-	padding: 0px
+	padding: 0px;
+	bottom: 0px
 }
 #map-sub {
 	height: 20%;
