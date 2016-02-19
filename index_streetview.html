@@ -38,7 +38,6 @@ function initialize() {
     mapTypeId: google.maps.MapTypeId.SATELLITE,
     heading: 90,
     tilt: 45, 
-    streetViewControl: true
   };
   
   map = new google.maps.Map(
@@ -46,6 +45,7 @@ function initialize() {
     mapOptions
     );
   
+  /*
   var planOptions = {
     position: start_location,
     zoom: 18,
@@ -59,8 +59,8 @@ function initialize() {
     document.getElementById('sv-canvas'), 
     planOptions
     );
+    */
   
-  /* 
   panorama = new google.maps.StreetViewPanorama(
     document.getElementById('sv-canvas'), {
       center: start_location,
@@ -70,7 +70,6 @@ function initialize() {
       }
     });
     map.setStreetView(panorama);
-    */
 }
 
 function rotate90() {
