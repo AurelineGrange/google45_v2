@@ -31,6 +31,7 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 }
 
+
 function rotate90() {
   var heading = map.getHeading() || 0;
   map.setHeading(heading + 90);
