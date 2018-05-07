@@ -15,15 +15,15 @@
 
 
 <body>
-  <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    <div id="map"></div>
-    <div id="pano"></div>
+  <input id="pac-input" class="controls " type="text" placeholder="Search Box">
+    <div id="map" class="split split-horizontal"></div>
+    <div id="pano" class="split split-horizontal"></div>
 
   / /Screen split
   <script>
     Split(['#map', '#pano'], {
-      sizes: [25, 75],
-      minSize: 200
+      gutterSize: 8,
+      cursor: 'col-resize'
     });
   </script>
 
